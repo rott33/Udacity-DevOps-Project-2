@@ -1,0 +1,16 @@
+[Unit]
+Description=udagram-springboot
+After=syslog.target
+
+[Service]
+EnvironmentFile=-/etc/default/udagram
+WorkingDirectory=/opt/udagram/
+User=springboot
+ExecStart=/usr/bin/java -Duser.timezone=UTC $LOGGING $JAVA_OPTS -Dserver.port=${PORT} -jar $BINARY
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=udagram
+SuccessExitStatus=143
+
+[Install]
+WantedBy=multi-user.target

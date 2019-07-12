@@ -1,0 +1,18 @@
+[
+    {
+        "ParameterKey": "EnvironmentName",
+        "ParameterValue": "Udagram"
+    },
+	{
+        "ParameterKey": "InstanceType",
+        "ParameterValue": "t3.small"
+    },
+	{
+        "ParameterKey": "S3WebConfigBucket",
+        "ParameterValue": "udacity-devops-project-2"
+    },
+	{
+        "ParameterKey": "KeyPair",
+        "ParameterValue": "udacity-us-west"
+    }
+]
