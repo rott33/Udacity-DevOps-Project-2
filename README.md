@@ -9,9 +9,9 @@ This project consists of the assets required to deploy the *Udagram* web applica
 
 ## CloudFormation
 There are 2 configuration files, one for the network architecture and one for the server deployment, both with corresponding parameter files:
-* [udagram-network.yml](udagram_network.yml)
+* [udagram-network.yml](udagram-network.yml)
   * [network-params.json](network-params.json)
-* [udagram-servers.yml](udagram_servers.yml)
+* [udagram-servers.yml](udagram-servers.yml)
   * [server-params.json](server-params.json)
 
 The CLI commands used to create both stacks, in order:
